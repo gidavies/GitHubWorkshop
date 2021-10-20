@@ -68,7 +68,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
 ## Secrets
 
-1. Click on **Settings**, **Secrets** and then **Add new secret**.
+1. Click on **Settings**, **Secrets** and then **New repository secret**.
 
     <img src="imgs/secrets.PNG">
 
@@ -76,7 +76,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
     * ACR_USER
     * ACR_PASSWORD
-    * ACR_REGISTRY
+    * ACR_SERVER
 
     > Note: Once you save them, they will be encrypted so you will not be able to see the values - double check they are correct before saving each one. 
 
@@ -114,7 +114,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
       >Note: by writing **needs: build** means that this job will only run if the preceding job, **build**, was successful. In this way, we can make sure that the job that creates and pushes the container image only runs if the code builds and tests successfully.
 
-  1. Commit your change and then naviagate to the Actions tab again. You will now see your Action is running, but this time is split out into two visual jobs.
+  1. Commit your change and then navigate to the Actions tab again. You will now see your Action is running, but this time is split out into two visual jobs.
 
       <img src="imgs/multijobs.png">
   
